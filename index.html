@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>TO DO </h1>
+ 
+        <form id="todo-form">
+            <div>
+                <label for="name">Task Name</label>
+                <input type="text" id="name" required>
+            </div>
+            <div>
+                <label for="description">Description</label>
+                <textarea id="description" required></textarea>
+            </div>
+            <div>
+                <label for="date">Date</label>
+                <input type="date" id="date" required>
+            </div>
+            <div>
+                <label for="done">Done</label>
+                <input type="checkbox" id="done">
+            </div>
+            <button type="submit">Add Task</button>
+        </form>
+
+
+        <table id="todo-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Task Name</th>
+                    <th>Description</th>
+                    <th>Date</th>
+                    <th>Done</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

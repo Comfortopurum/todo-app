@@ -1,0 +1,195 @@
+/* Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    height: 1200px;
+    font-family: "Poppins", sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 34px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #FF6B00;
+}
+
+
+form {
+    background-color: #FFF8F2;
+    padding: 20px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea:hover{
+    border: 1px solid #FF6B00;
+
+}
+
+input:hover{
+    border: 1px solid #FF6B00;
+}
+
+input[type="date"]:hover{
+    border: 1px solid #FF6B00;
+}
+
+input[type="checkbox"] {
+    background-color: 1px solid #FF6B00;
+}
+
+input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 16px;
+    width: 25%;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    
+}
+
+
+button:hover {
+    background-color: #FF6B00;
+}
+
+button {
+    width: 25%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    background-color: black;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+table {
+    width: 100%;
+    margin: 10px 0;
+    border-collapse: collapse;
+    
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #FF6B00;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #FFF8F2;
+}
+
+tr:hover {
+    background-color: #fce6d4;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.actions button {
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.actions .edit {
+    background-color: #070707;
+    color: #fff;
+}
+
+.actions .edit:hover {
+    background-color:#FF6B00 ;
+}
+
+.actions .delete {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+.actions .delete:hover {
+    background-color: #cc0000;
+}
+
+
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    textarea {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    th, td {
+        font-size: 14px;
+    }
+
+    table{
+        width: 100%;
+        margin: 20px 0;
+    }
+}
